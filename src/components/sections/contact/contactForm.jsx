@@ -10,14 +10,15 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(serviceId + " " + templateId + " " + publicKey);
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       () => {
         e.target.reset();
         alert("Your email was sent, thank you!");
       },
-      (error) => {
-        console.log(error.text);
+      () => {
+        alert(
+          "Your email was Not sent reachout to tanksalif@gmail.com, thank you!"
+        );
       }
     );
   };

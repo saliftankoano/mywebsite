@@ -22,7 +22,7 @@ const servicesList = [
     icon2: <img src={shopify} width="50" />,
     service_name: "Content Management Systems",
     service_description:
-      "Kane gives you the blocks & kits you need to create a true website within minutes.",
+      "CMSs are widely used across industries, and my expertise saves time & money for organizations.",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const servicesList = [
     icon6: <img src={mysql} width="50" />,
     service_name: "Web development",
     service_description:
-      "Kane gives you the blocks & kits you need to create a true website within minutes.",
+      "With these technologies, I develop front-end and back-end tailored solutions.",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const servicesList = [
     icon3: <img src={hotjar} width="50" />,
     service_name: "Performance & Analytics",
     service_description:
-      "Kane gives you the blocks & kits you need to create a true website within minutes.",
+      "Optimizing your web applications and website with data-driven tools with your customers' behaviors.",
   },
 ];
 const Services = () => {

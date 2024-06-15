@@ -1271,9 +1271,14 @@ html {
   line-height: 72px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 991px) {
-  .about-content-part h2 {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about-content-part div h2 {
     margin-top: 22%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-content-part div h2 {
+    margin-top: 25%;
   }
 }
 .about-content-part h2 span {
@@ -1536,9 +1541,6 @@ ul.extra-skills li i {
 
 .project-image img {
   width: 100%;
-}
-
-.project-content {
 }
 
 .project-content .sub-title {

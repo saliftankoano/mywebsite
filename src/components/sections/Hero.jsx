@@ -7,7 +7,6 @@ import {
   RiYoutubeFill,
   RiInstagramFill,
 } from "@remixicon/react";
-import profile_img from "../../assets/images/mee.png";
 import SlideUp from "../animations/slideUp";
 import resume from "../../assets/salif-resume.pdf";
 const Hero = () => {
@@ -19,7 +18,13 @@ const Hero = () => {
           <div className="col-lg-5">
             <SlideUp>
               <div className="about-image-part">
-                <img src={profile_img} alt="About Me" />
+                {/* width="500"
+                  height="430" */}
+                <img
+                  fetchPriority="high"
+                  src="https://ik.imagekit.io/engineerbf24/portfolio/mee.jpg?updatedAt=1718327267748"
+                  alt="Salif smiling with a pair of glasses facing the camera."
+                />
                 <h2>Salif Tankoano</h2>
                 <h3 className="roles">Webmaster / Web developer</h3>
                 <div className="about-btn btn-one text-center">

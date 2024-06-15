@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/images/SALIF.png";
+import logo from "../../../../salif-portfolio/salif.png";
 import { Link } from "react-scroll";
 
 const menuList = [
   {
-    id: 1,
-    path: "home",
-    label: "Home",
-  },
-  {
     id: 2,
     path: "about",
-    label: "About",
+    label: "Home",
   },
   {
     id: 3,

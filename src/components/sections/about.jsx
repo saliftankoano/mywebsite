@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  RiArrowRightUpLine,
-  RiDownloadLine,
-  RiLinkedinFill,
-  RiGithubLine,
-  RiYoutubeFill,
-  RiInstagramFill,
-} from "@remixicon/react";
-import profile_img from "../../assets/images/code.jpeg";
 import SlideUp from "../animations/slideUp";
+
 const About = () => {
   return (
     <section id="about" className="about-area">
@@ -47,7 +39,13 @@ const About = () => {
           <div className="col-lg-5">
             <SlideUp>
               <div className="about-image-part">
-                <img src={profile_img} alt="About Me" />
+                {/* width="500"
+                  height="380" */}
+                <img
+                  fetchPriority="high"
+                  src="https://ik.imagekit.io/engineerbf24/portfolio/code.jpg?updatedAt=1718327267454"
+                  alt="Salif coding at home"
+                />
               </div>
             </SlideUp>
           </div>

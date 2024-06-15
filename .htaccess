@@ -1,2 +1,0 @@
-# Ensure JavaScript files are served with the correct MIME type
-AddType application/javascript .js
