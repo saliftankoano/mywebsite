@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../../../salif-portfolio/salif.png";
 import { Link } from "react-scroll";
 
 const menuList = [
