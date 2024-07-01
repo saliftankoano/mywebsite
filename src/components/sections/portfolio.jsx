@@ -31,11 +31,11 @@ const Portfolio = () => {
 
   // ------ filter unique category
   const filteredCategory = ["All"];
-  //   projectsData.forEach(({ category }) => {
-  //     if (!filteredCategory.includes(category)) {
-  //       filteredCategory.push(category);
-  //     }
-  //   });
+  projectsData.forEach(({ category }) => {
+    if (!filteredCategory.includes(category)) {
+      filteredCategory.push(category);
+    }
+  });
   // ------ filter unique category
 
   const filteredProjects =
@@ -65,10 +65,10 @@ const Portfolio = () => {
           ))}
         </ul>
         <div className="row project-masonry-active">
-          {filteredProjects.map(({ category, id, src, title, link }) => (
+          {filteredProjects.map(({ tools, id, src, title, link }) => (
             <Card
               key={id}
-              category={category}
+              tools={tools}
               title={title}
               src={src}
               animationClass={animationClass}
@@ -85,7 +85,7 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-const Card = ({ category, title, src, animationClass, openLightbox, link }) => {
+const Card = ({ tools, title, src, animationClass, openLightbox, link }) => {
   return (
     <div className={`col-lg-4 col-md-6 item branding ${animationClass}`}>
       <div className="project-item style-two wow fadeInUp delay-0-2s">
@@ -100,7 +100,7 @@ const Card = ({ category, title, src, animationClass, openLightbox, link }) => {
           </a>
         </div>
         <div className="project-content">
-          <span className="sub-title">{category}</span>
+          <span className="sub-title">{tools}</span>
           <h3>{title}</h3>
         </div>
       </div>
